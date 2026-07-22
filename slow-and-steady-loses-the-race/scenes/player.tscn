@@ -93,7 +93,7 @@ animations = [{
 }]
 
 [node name="Player" type="CharacterBody2D"]
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.33, 0.33)
 script = ExtResource("1_g2els")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -106,7 +106,11 @@ sprite_frames = SubResource("SpriteFrames_a8ls1")
 autoplay = "default"
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(1.25, 1.25)
+zoom = Vector2(2.5, 2.5)
 limit_bottom = 100
 limit_smoothed = true
 position_smoothing_enabled = true
+
+[node name="CoyoteTimer" type="Timer" parent="."]
+wait_time = 0.15
+one_shot = true

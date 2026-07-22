@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Slow and Steady Loses the Race"
-run/main_scene="uid://hiflgdigo2er"
+run/main_scene="uid://cbrg7k7ka0npi"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Global="*res://scripts/global.gd"
 
 [editor_plugins]
 
