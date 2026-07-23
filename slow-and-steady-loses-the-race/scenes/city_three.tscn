@@ -1,12 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://cbrg7k7ka0npi"]
+[gd_scene load_steps=7 format=3 uid="uid://c36o2fdj7b3rk"]
 
-[ext_resource type="PackedScene" uid="uid://bgx8817pnmh8f" path="res://scenes/player.tscn" id="1_37h1x"]
-[ext_resource type="Texture2D" uid="uid://nqf5aj5dthwr" path="res://sprites/TileMapLateForWork(3).png" id="2_t0fod"]
-[ext_resource type="PackedScene" uid="uid://cnhfs4tmrteic" path="res://scenes/hud.tscn" id="3_t0fod"]
-[ext_resource type="PackedScene" uid="uid://dxs3q3744orno" path="res://scenes/menu.tscn" id="4_i2vba"]
+[ext_resource type="PackedScene" uid="uid://bgx8817pnmh8f" path="res://scenes/player.tscn" id="1_t5e0k"]
+[ext_resource type="Texture2D" uid="uid://nqf5aj5dthwr" path="res://sprites/TileMapLateForWork(3).png" id="2_nt4lr"]
+[ext_resource type="PackedScene" uid="uid://cnhfs4tmrteic" path="res://scenes/hud.tscn" id="3_lpwq5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4wyf3"]
-texture = ExtResource("2_t0fod")
+texture = ExtResource("2_nt4lr")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -44,9 +43,9 @@ sources/0 = SubResource("TileSetAtlasSource_4wyf3")
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_i2vba"]
 
-[node name="City One" type="Node2D"]
+[node name="City Three" type="Node2D"]
 
-[node name="Player" parent="." instance=ExtResource("1_37h1x")]
+[node name="Player" parent="." instance=ExtResource("1_t5e0k")]
 position = Vector2(0, 82)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -59,6 +58,4 @@ tile_set = SubResource("TileSet_k0juu")
 position = Vector2(-1, 100)
 shape = SubResource("WorldBoundaryShape2D_i2vba")
 
-[node name="HUD" parent="." instance=ExtResource("3_t0fod")]
-
-[node name="Menu" parent="." instance=ExtResource("4_i2vba")]
+[node name="HUD" parent="." instance=ExtResource("3_lpwq5")]
