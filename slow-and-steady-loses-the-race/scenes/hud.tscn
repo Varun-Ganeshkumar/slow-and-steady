@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=3 uid="uid://cnhfs4tmrteic"]
+
+[ext_resource type="Script" uid="uid://fbshd5afy7ke" path="res://scripts/hud.gd" id="1_ahhtf"]
+
+[node name="HUD" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ahhtf")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="City One Countdown" type="Label" parent="CanvasLayer"]
+offset_right = 244.0
+offset_bottom = 72.0
+theme_override_font_sizes/font_size = 20
+text = "City One: 99 Seconds Left"
+
+[node name="City Two Countdown" type="Label" parent="CanvasLayer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -244.0
+offset_bottom = 72.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 20
+text = "City Two: 99 Seconds Left"
+
+[node name="City Three Countdown" type="Label" parent="CanvasLayer"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -72.0
+offset_right = 244.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 20
+text = "City Three: 99 Seconds Left"
+vertical_alignment = 2
+
+[node name="City Four Countdown" type="Label" parent="CanvasLayer"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -244.0
+offset_top = -72.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 20
+text = "City Four: 99 Seconds Left"
+vertical_alignment = 2
+
+[node name="CountDownTimer" type="Timer" parent="CanvasLayer"]
+one_shot = true
+
+[connection signal="timeout" from="CanvasLayer/CountDownTimer" to="." method="_on_count_down_timer_timeout"]

@@ -1,0 +1,155 @@
+[gd_scene load_steps=6 format=3 uid="uid://dxs3q3744orno"]
+
+[ext_resource type="Script" uid="uid://b5my81xfgd8c" path="res://scripts/menu.gd" id="1_yqeox"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vjb58"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_con2f"]
+bg_color = Color(0.344076, 0.344076, 0.344076, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mhnvy"]
+bg_color = Color(0.144063, 0.144063, 0.144062, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ytvr"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[node name="Menu" type="Control"]
+process_mode = 3
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+process_mode = 3
+visible = false
+script = ExtResource("1_yqeox")
+
+[node name="CityOneButton" type="Button" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -126.0
+offset_right = 126.0
+offset_bottom = 127.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vjb58")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_con2f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mhnvy")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ytvr")
+text = "City One"
+
+[node name="CityTwoButton" type="Button" parent="CanvasLayer"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -63.5
+offset_right = 252.0
+offset_bottom = 63.5
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vjb58")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_con2f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mhnvy")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ytvr")
+text = "City Two"
+
+[node name="CityThreeButton" type="Button" parent="CanvasLayer"]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -252.0
+offset_top = -63.5
+offset_bottom = 63.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vjb58")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_con2f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mhnvy")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ytvr")
+text = "City Three"
+
+[node name="CityFourButton" type="Button" parent="CanvasLayer"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -126.0
+offset_top = -127.0
+offset_right = 126.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vjb58")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_con2f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mhnvy")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ytvr")
+text = "City Four"
+
+[node name="ShopButton" type="Button" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -126.0
+offset_top = -63.5
+offset_right = 126.0
+offset_bottom = 63.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vjb58")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_con2f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mhnvy")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ytvr")
+text = "Shop"
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+show_behind_parent = true
+z_index = -3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.168627, 0.168627, 0.168627, 0.392157)
+
+[connection signal="pressed" from="CanvasLayer/CityOneButton" to="CanvasLayer" method="_on_city_one_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/CityTwoButton" to="CanvasLayer" method="_on_city_two_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/CityThreeButton" to="CanvasLayer" method="_on_city_three_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/CityFourButton" to="CanvasLayer" method="_on_city_four_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/ShopButton" to="CanvasLayer" method="_on_shop_button_pressed"]
