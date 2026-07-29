@@ -17,7 +17,7 @@ script = ExtResource("1_ahhtf")
 [node name="City One Countdown" type="Label" parent="CanvasLayer"]
 offset_right = 244.0
 offset_bottom = 72.0
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 40
 text = "City One: 99 Seconds Left"
 
 [node name="City Two Countdown" type="Label" parent="CanvasLayer"]
@@ -27,7 +27,7 @@ anchor_right = 1.0
 offset_left = -244.0
 offset_bottom = 72.0
 grow_horizontal = 0
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 40
 text = "City Two: 99 Seconds Left"
 
 [node name="City Three Countdown" type="Label" parent="CanvasLayer"]
@@ -37,7 +37,7 @@ anchor_bottom = 1.0
 offset_top = -72.0
 offset_right = 244.0
 grow_vertical = 0
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 40
 text = "City Three: 99 Seconds Left"
 vertical_alignment = 2
 
@@ -51,7 +51,7 @@ offset_left = -244.0
 offset_top = -72.0
 grow_horizontal = 0
 grow_vertical = 0
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 40
 text = "City Four: 99 Seconds Left"
 vertical_alignment = 2
 
