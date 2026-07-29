@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://dodkruojcoxxw"]
+
+[ext_resource type="Script" uid="uid://cjp3kvfpl8auw" path="res://scripts/wood.gd" id="1_es2n6"]
+[ext_resource type="Texture2D" uid="uid://bw8wcp2pdy5mb" path="res://sprites/wooden plank.png" id="2_n3wld"]
+[ext_resource type="PackedScene" uid="uid://co1u25eg6lmpn" path="res://scenes/interactable.tscn" id="3_1yd0c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bl13t"]
+size = Vector2(381.24, 44.7442)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_iyx0m"]
+radius = 3.92941
+
+[node name="Wood" type="StaticBody2D"]
+scale = Vector2(0.314763, 0.29054)
+script = ExtResource("1_es2n6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-12.708, -12.0465)
+shape = SubResource("RectangleShape2D_bl13t")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-12.708, 10.3256)
+scale = Vector2(3, 3)
+texture = ExtResource("2_n3wld")
+
+[node name="Interactable" parent="." instance=ExtResource("3_1yd0c")]
+interact_name = "Press E to Get (free)"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
+position = Vector2(0, 182.419)
+scale = Vector2(28.2981, 33.212)
+shape = SubResource("CircleShape2D_iyx0m")
