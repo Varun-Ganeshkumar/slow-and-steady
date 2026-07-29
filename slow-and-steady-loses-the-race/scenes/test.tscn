@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://blxeebcl0qxd0"]
 
 [ext_resource type="Script" uid="uid://dt5rd6pv1s3ms" path="res://scripts/swuuper_test.gd" id="1_iyx0m"]
-[ext_resource type="Texture2D" uid="uid://cge5wgcolb5x8" path="res://icon.svg" id="2_74lek"]
+[ext_resource type="Texture2D" uid="uid://cge5wgcolb5x8" path="res://exports/icon.svg" id="2_74lek"]
 [ext_resource type="PackedScene" uid="uid://co1u25eg6lmpn" path="res://scenes/interactable.tscn" id="3_j5jx5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bl13t"]
