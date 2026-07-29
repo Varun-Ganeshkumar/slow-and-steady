@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://bdyfytx2sgfhv"]
+
+[ext_resource type="Script" uid="uid://vbfla2amo8ne" path="res://scripts/freeze.gd" id="1_j7yc7"]
+[ext_resource type="Texture2D" uid="uid://b3xpihhtjgdd8" path="res://sprites/freezeTimer-1.png.png" id="2_ql0iy"]
+[ext_resource type="PackedScene" uid="uid://co1u25eg6lmpn" path="res://scenes/interactable.tscn" id="3_a58qm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_j7yc7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_iyx0m"]
+radius = 3.92941
+
+[node name="Freeze" type="StaticBody2D"]
+scale = Vector2(0.314763, 0.29054)
+script = ExtResource("1_j7yc7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3.17699, -86.0467)
+shape = SubResource("CircleShape2D_j7yc7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3.17699, -82.6048)
+scale = Vector2(6.36477, 6.36477)
+texture = ExtResource("2_ql0iy")
+
+[node name="Interactable" parent="." instance=ExtResource("3_a58qm")]
+interact_name = "Press E to Buy (3 SP)"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
+position = Vector2(0, 182.419)
+scale = Vector2(28.2981, 33.212)
+shape = SubResource("CircleShape2D_iyx0m")
