@@ -1,8 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://c36o2fdj7b3rk"]
+[gd_scene load_steps=17 format=4 uid="uid://c36o2fdj7b3rk"]
 
 [ext_resource type="PackedScene" uid="uid://bgx8817pnmh8f" path="res://scenes/player.tscn" id="1_t5e0k"]
 [ext_resource type="Texture2D" uid="uid://nqf5aj5dthwr" path="res://sprites/TileMapLateForWork(3).png" id="2_nt4lr"]
 [ext_resource type="PackedScene" uid="uid://cnhfs4tmrteic" path="res://scenes/hud.tscn" id="3_lpwq5"]
+[ext_resource type="PackedScene" uid="uid://dxs3q3744orno" path="res://scenes/menu.tscn" id="4_nt4lr"]
+[ext_resource type="PackedScene" uid="uid://cqo2mbwtqf6wr" path="res://scenes/shield.tscn" id="5_lpwq5"]
+[ext_resource type="Texture2D" uid="uid://n5ur4c0oocmt" path="res://sprites/Giovalian city.png" id="6_3nbtv"]
+[ext_resource type="Script" uid="uid://dvse4jdu67by0" path="res://scripts/animation_player.gd" id="7_eypvd"]
+[ext_resource type="Texture2D" uid="uid://dl3dqowafjg45" path="res://sprites/New Piskel-1.png(3).png" id="8_j3301"]
+[ext_resource type="PackedScene" uid="uid://em5t735vp0cb" path="res://scenes/game_over_screen.tscn" id="9_5md0m"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4wyf3"]
 texture = ExtResource("2_nt4lr")
@@ -43,13 +49,124 @@ sources/0 = SubResource("TileSetAtlasSource_4wyf3")
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_i2vba"]
 
+[sub_resource type="Animation" id="Animation_8gi42"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(103, -870)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Player/Camera2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 9.53674e-06)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Player:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 82)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Game Over Screen:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_yvlmv"]
+resource_name = "someohting"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Sprite2D:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(103, -870), Vector2(103, -601)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Player/Camera2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.966667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(296.97, -2290.91), Vector2(296.97, -2290.91)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Player:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 82)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Game Over Screen:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(2),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vo4fy"]
+_data = {
+&"RESET": SubResource("Animation_8gi42"),
+&"someohting": SubResource("Animation_yvlmv")
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qwri4"]
+
 [node name="City Three" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_t5e0k")]
 position = Vector2(0, 82)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray(0, 0, 9, 0, 3, 0, 0, 0, 0, 0, 1, 0, 0, 0, 10, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 254, 255, 0, 0, 0, 0, 1, 0, 0, 0, 7, 0, 254, 255, 0, 0, 0, 0, 0, 0, 0, 0)
+tile_map_data = PackedByteArray("AAAJAAMAAAAAAAEAAAAKAAMAAAAAAAAAAAAGAP7/AAAAAAEAAAAHAP7/AAAAAAAAAAAKAPf/AAAAAAEAAAALAPf/AAAAAAAAAAAKAOj/AAAAAAEAAAAQAOj/AAAAAAAAAAALAOj/AAABAAEAAAAMAOj/AAABAAEAAAANAOj/AAABAAEAAAAOAOj/AAABAAEAAAAPAOj/AAABAAEAAAABAOH/AAABAAEAAAAAAOH/AAAAAAEAAAACAOH/AAAAAAAAAADc/9n/AAAAAAEAAADi/9n/AAAAAAAAAADd/9n/AAABAAEAAADe/9n/AAABAAEAAADf/9n/AAABAAEAAADg/9n/AAABAAEAAADh/9n/AAABAAEAAADd/97/AAABAAEAAADe/97/AAABAAEAAADf/97/AAABAAEAAADg/97/AAABAAEAAADh/97/AAABAAEAAADc/97/AAAAAAEAAADi/97/AAAAAAAAAADj/93/AAAAAAAAAADj/9z/AAAAAAAAAADj/9v/AAAAAAAAAADj/9r/AAAAAAAAAAD6/+X/AAAAAAAAAAD5/+X/AAABAAEAAAD4/+X/AAABAAEAAAD3/+X/AAABAAEAAAD2/+X/AAABAAEAAAD1/+X/AAABAAEAAAD0/+X/AAABAAEAAADz/+X/AAAAAAEAAADn/+j/AAAAAAEAAADo/+j/AAABAAEAAADp/+j/AAAAAAAAAADc/+X/AAAAAAAAAADb/+X/AAAAAAEAAADb/+D/AAAAAAEAAADc/+D/AAAAAAAAAAAFAO//AAAAAAEAAAAGAO//AAAAAAAAAAA=")
 tile_set = SubResource("TileSet_k0juu")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
@@ -59,3 +176,36 @@ position = Vector2(-1, 100)
 shape = SubResource("WorldBoundaryShape2D_i2vba")
 
 [node name="HUD" parent="." instance=ExtResource("3_lpwq5")]
+
+[node name="Menu" parent="." instance=ExtResource("4_nt4lr")]
+
+[node name="Shield" parent="." instance=ExtResource("5_lpwq5")]
+position = Vector2(-518, -636)
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0.1, 0.1)
+scroll_offset = Vector2(-242, 234)
+repeat_size = Vector2(750, 0)
+repeat_times = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+z_index = -1212
+position = Vector2(111, -87)
+scale = Vector2(3, 3)
+texture = ExtResource("6_3nbtv")
+centered = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_vo4fy"),
+&"glb9abl": SubResource("AnimationLibrary_qwri4")
+}
+script = ExtResource("7_eypvd")
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(103, -870)
+scale = Vector2(6.40674, 6.40674)
+texture = ExtResource("8_j3301")
+
+[node name="Game Over Screen" parent="." instance=ExtResource("9_5md0m")]
+visible = false
