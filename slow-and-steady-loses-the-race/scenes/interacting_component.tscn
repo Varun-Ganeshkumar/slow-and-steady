@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbxqqe0gcqngq"]
+
+[ext_resource type="Script" uid="uid://bcmm25d46xu3t" path="res://scripts/interacting_component.gd" id="1_ofc3v"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ofc3v"]
+radius = 23.0
+height = 78.0
+
+[node name="InteractingComponent" type="Node2D"]
+script = ExtResource("1_ofc3v")
+
+[node name="InteractRange" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractRange"]
+position = Vector2(-1, -21)
+shape = SubResource("CapsuleShape2D_ofc3v")
+
+[node name="InteractLabel" type="Label" parent="InteractRange"]
+z_index = 5
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -167.5
+offset_top = -166.0
+offset_right = 167.5
+offset_bottom = -131.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "Button to interact and build"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="area_entered" from="InteractRange" to="." method="_on_interact_range_area_entered"]
+[connection signal="area_exited" from="InteractRange" to="." method="_on_interact_range_area_exited"]
