@@ -1,7 +1,10 @@
-[gd_scene load_steps=16 format=3 uid="uid://bgx8817pnmh8f"]
+[gd_scene load_steps=32 format=3 uid="uid://bgx8817pnmh8f"]
 
 [ext_resource type="Script" uid="uid://4hg4lw0va3t7" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://ccph3t7v4f8t3" path="res://sprites/New Piskel.png" id="2_qhqgy"]
+[ext_resource type="PackedScene" uid="uid://bbxqqe0gcqngq" path="res://scenes/interacting_component.tscn" id="3_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://dhvjvey6s4gtx" path="res://sprites/workaholic(1).png" id="3_qlg0r"]
+[ext_resource type="Texture2D" uid="uid://lrya4s6avs1r" path="res://sprites/workaholic.png" id="4_tuyoq"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dqkch"]
 radius = 30.0
@@ -51,6 +54,58 @@ region = Rect2(0, 384, 128, 128)
 atlas = ExtResource("2_qhqgy")
 region = Rect2(128, 384, 128, 128)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_a8ls1"]
+atlas = ExtResource("3_qlg0r")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qfm1y"]
+atlas = ExtResource("3_qlg0r")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fulsm"]
+atlas = ExtResource("3_qlg0r")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4r5pv"]
+atlas = ExtResource("3_qlg0r")
+region = Rect2(128, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_60mlk"]
+atlas = ExtResource("3_qlg0r")
+region = Rect2(0, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i4ail"]
+atlas = ExtResource("4_tuyoq")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a38lo"]
+atlas = ExtResource("4_tuyoq")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ni07"]
+atlas = ExtResource("4_tuyoq")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l71n6"]
+atlas = ExtResource("4_tuyoq")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ke2ow"]
+atlas = ExtResource("4_tuyoq")
+region = Rect2(128, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujl30"]
+atlas = ExtResource("4_tuyoq")
+region = Rect2(256, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_31cv2"]
+atlas = ExtResource("4_tuyoq")
+region = Rect2(0, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pf23h"]
+atlas = ExtResource("4_tuyoq")
+region = Rect2(128, 256, 128, 128)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_a8ls1"]
 animations = [{
 "frames": [{
@@ -90,9 +145,59 @@ animations = [{
 "loop": true,
 "name": &"default",
 "speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a8ls1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qfm1y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fulsm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4r5pv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_60mlk")
+}],
+"loop": false,
+"name": &"jumping",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i4ail")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a38lo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ni07")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l71n6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ke2ow")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ujl30")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_31cv2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pf23h")
+}],
+"loop": true,
+"name": &"running",
+"speed": 5.0
 }]
 
 [node name="Player" type="CharacterBody2D"]
+z_index = 30
 scale = Vector2(0.33, 0.33)
 script = ExtResource("1_g2els")
 
@@ -107,6 +212,8 @@ autoplay = "default"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2.5, 2.5)
+limit_left = -1000
+limit_right = 1000
 limit_bottom = 100
 limit_smoothed = true
 position_smoothing_enabled = true
@@ -114,3 +221,6 @@ position_smoothing_enabled = true
 [node name="CoyoteTimer" type="Timer" parent="."]
 wait_time = 0.05
 one_shot = true
+
+[node name="InteractingComponent" parent="." instance=ExtResource("3_qhqgy")]
+position = Vector2(-4.76837e-07, -15.1515)
