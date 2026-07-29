@@ -1,0 +1,14 @@
+CanvasLayer
+Node2D
+AudioStreamPlayer2D
+AudioListener2D
+Button
+Label
+ColorRect
+Sprite2D
+AnimationPlayer
+CollisionShape2D
+Parallax2D
+ParallaxLayer
+ParallaxBackground
+StaticBody2D

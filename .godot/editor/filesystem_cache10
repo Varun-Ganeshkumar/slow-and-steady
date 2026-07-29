@@ -1,0 +1,67 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1785334742
+README.md::TextFile/TextFile::-1::1784740772::0::1::::<><><>0<>0<><>::
+::res://addons/::1784740772
+::res://addons/godot_super-wakatime/::1784740773
+api_key_prompt.tscn::PackedScene/PackedScene::3919262858641749045::1784740772::0::1::::<><><>0<>0<><>::
+counter.tscn::PackedScene/PackedScene::6849360014225833986::1784740772::0::1::::<><><>0<>0<><>::
+decompressor.gd::GDScript/GDScript::513498479588648040::1784740772::0::1::::<>RefCounted<><>0<>0<><>::
+godot_super-wakatime.gd::GDScript/GDScript::6277149880384411866::1784740772::0::1::::<>EditorPlugin<><>0<>1<><>::
+plugin.cfg::TextFile/TextFile::-1::1784740773::0::1::::<><><>0<>0<><>::
+README.md::TextFile/TextFile::-1::1784740772::0::1::::<><><>0<>0<><>::
+utils.gd::GDScript/GDScript::5251015809120159908::1784740773::0::1::::<>RefCounted<><>0<>0<><>::
+::res://exports/::1785334742
+export_presets.cfg::TextFile::-1::1785083964::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D::5204093056360117279::1784740670::1785334742::1::::<><><>0<>0<>9afc011ed63dd2b75ae8aef45069349b<>res://.godot/imported/icon.svg-241d534ccb0bbe31467ed2e578fcce59.ctex::
+index.apple-touch-icon.png::CompressedTexture2D::7146441277081069547::1785083964::1785334742::1::::<><><>0<>0<>fc145930e60ec8e230b50d6decfdb92f<>res://.godot/imported/index.apple-touch-icon.png-65973ddaad96ecdaf3c752a8d5b693c7.ctex::
+index.icon.png::CompressedTexture2D::4620995182992204138::1785083964::1785334742::1::::<><><>0<>0<>ea897ee9f68eb22307e8f0651f5e5fab<>res://.godot/imported/index.icon.png-c4a9e96706e70b250c0b0144b6b11313.ctex::
+index.png::CompressedTexture2D::4564572039133668935::1785083964::1785334742::1::::<><><>0<>0<>1ed5e143b9ad4788f238b3decf90e0e9<>res://.godot/imported/index.png-b259ab16718bc210c505332965363aff.ctex::
+::res://scenes/::1785334742
+audio_stream_player_2d.tscn::PackedScene/PackedScene::1226216863949733946::1785083940::0::1::::<><><>0<>0<><>::uid://c83jlr3kqj1uv::::res://sounds/mfcc-retro-arcade-game-music-297305(1).mp3<>uid://0bcf6j58u6qq::::res://scripts/audio_stream_player_2d.gd
+city_four.tscn::PackedScene/PackedScene::4169872943493726329::1785083938::0::1::::<><><>0<>0<><>::uid://bgx8817pnmh8f::::res://scenes/player.tscn<>uid://nqf5aj5dthwr::::res://sprites/TileMapLateForWork(3).png<>uid://cnhfs4tmrteic::::res://scenes/hud.tscn<>uid://dxs3q3744orno::::res://scenes/menu.tscn<>uid://cqo2mbwtqf6wr::::res://scenes/shield.tscn<>uid://b5pcedfbojy2f::::res://sprites/TokyoGeisha city.png<>uid://dvse4jdu67by0::::res://scripts/animation_player.gd<>uid://dl3dqowafjg45::::res://sprites/New Piskel-1.png(3).png<>uid://em5t735vp0cb::::res://scenes/game_over_screen.tscn
+city_one.tscn::PackedScene/PackedScene::4878546655327401282::1785083937::0::1::::<><><>0<>0<><>::uid://bgx8817pnmh8f::::res://scenes/player.tscn<>uid://nqf5aj5dthwr::::res://sprites/TileMapLateForWork(3).png<>uid://cnhfs4tmrteic::::res://scenes/hud.tscn<>uid://dxs3q3744orno::::res://scenes/menu.tscn<>uid://cqo2mbwtqf6wr::::res://scenes/shield.tscn<>uid://dcvhipquemtqs::::res://sprites/city by cityvector91.jpg<>uid://dl3dqowafjg45::::res://sprites/New Piskel-1.png(3).png<>uid://dvse4jdu67by0::::res://scripts/animation_player.gd<>uid://em5t735vp0cb::::res://scenes/game_over_screen.tscn
+city_three.tscn::PackedScene/PackedScene::6803023221664042404::1785083938::0::1::::<><><>0<>0<><>::uid://bgx8817pnmh8f::::res://scenes/player.tscn<>uid://nqf5aj5dthwr::::res://sprites/TileMapLateForWork(3).png<>uid://cnhfs4tmrteic::::res://scenes/hud.tscn<>uid://dxs3q3744orno::::res://scenes/menu.tscn<>uid://cqo2mbwtqf6wr::::res://scenes/shield.tscn<>uid://n5ur4c0oocmt::::res://sprites/Giovalian city.png<>uid://dvse4jdu67by0::::res://scripts/animation_player.gd<>uid://dl3dqowafjg45::::res://sprites/New Piskel-1.png(3).png<>uid://em5t735vp0cb::::res://scenes/game_over_screen.tscn
+city_two.tscn::PackedScene/PackedScene::5629553928706766459::1785083938::0::1::::<><><>0<>0<><>::uid://bgx8817pnmh8f::::res://scenes/player.tscn<>uid://nqf5aj5dthwr::::res://sprites/TileMapLateForWork(3).png<>uid://cnhfs4tmrteic::::res://scenes/hud.tscn<>uid://dxs3q3744orno::::res://scenes/menu.tscn<>uid://cqo2mbwtqf6wr::::res://scenes/shield.tscn<>uid://d2ba0di8touh2::::res://sprites/Fiulo City.svg<>uid://dvse4jdu67by0::::res://scripts/animation_player.gd<>uid://dl3dqowafjg45::::res://sprites/New Piskel-1.png(3).png<>uid://em5t735vp0cb::::res://scenes/game_over_screen.tscn
+freeze.tscn::PackedScene/PackedScene::2646879759447389319::1785083940::0::1::::<><><>0<>0<><>::uid://vbfla2amo8ne::::res://scripts/freeze.gd<>uid://b3xpihhtjgdd8::::res://sprites/freezeTimer-1.png.png<>uid://co1u25eg6lmpn::::res://scenes/interactable.tscn
+game_over_screen.tscn::PackedScene/PackedScene::307385072861506353::1785083940::0::1::::<><><>0<>0<><>::uid://d0gc1ne6bemey::::res://scripts/game_over_screen.gd
+hud.tscn::PackedScene/PackedScene::5700084261310294538::1785083939::0::1::::<><><>0<>0<><>::uid://fbshd5afy7ke::::res://scripts/hud.gd
+interactable.tscn::PackedScene/PackedScene::5810423138409178819::1785083939::0::1::::<><><>0<>0<><>::uid://bv7suc0ovuk71::::res://scripts/interactable.gd
+interacting_component.tscn::PackedScene/PackedScene::2505090509250690352::1785083939::0::1::::<><><>0<>0<><>::uid://bcmm25d46xu3t::::res://scripts/interacting_component.gd
+menu.tscn::PackedScene/PackedScene::8812494424271560044::1785083939::0::1::::<><><>0<>0<><>::uid://b5my81xfgd8c::::res://scripts/menu.gd
+node_2d.tscn::PackedScene/PackedScene::6142780667794747470::1785083940::0::1::::<><><>0<>0<><>::uid://dl3dqowafjg45::::res://sprites/New Piskel-1.png(3).png
+player.tscn::PackedScene/PackedScene::2857098441565054739::1785083939::0::1::::<><><>0<>0<><>::uid://4hg4lw0va3t7::::res://scripts/player.gd<>uid://ccph3t7v4f8t3::::res://sprites/New Piskel.png<>uid://bbxqqe0gcqngq::::res://scenes/interacting_component.tscn<>uid://dhvjvey6s4gtx::::res://sprites/workaholic(1).png<>uid://lrya4s6avs1r::::res://sprites/workaholic.png
+shield.tscn::PackedScene/PackedScene::5926425029877045249::1785083939::0::1::::<><><>0<>0<><>::uid://bt2vtreeoijl2::::res://scripts/shield.gd<>uid://bw8wcp2pdy5mb::::res://sprites/wooden plank.png<>uid://co1u25eg6lmpn::::res://scenes/interactable.tscn
+shop.tscn::PackedScene/PackedScene::3222765020401215781::1785083938::0::1::::<><><>0<>0<><>::uid://bgx8817pnmh8f::::res://scenes/player.tscn<>uid://nqf5aj5dthwr::::res://sprites/TileMapLateForWork(3).png<>uid://cnhfs4tmrteic::::res://scenes/hud.tscn<>uid://dxs3q3744orno::::res://scenes/menu.tscn<>uid://dodkruojcoxxw::::res://scenes/wood.tscn<>uid://bdyfytx2sgfhv::::res://scenes/freeze.tscn<>uid://cwxudlx0eeide::::res://sprites/SilicaAndPina shop.png<>uid://dvse4jdu67by0::::res://scripts/animation_player.gd<>uid://dl3dqowafjg45::::res://sprites/New Piskel-1.png(3).png<>uid://em5t735vp0cb::::res://scenes/game_over_screen.tscn
+test.tscn::PackedScene::3206228719348330187::1785334742::0::1::::<><><>0<>0<><>::uid://dt5rd6pv1s3ms::::res://scripts/swuuper_test.gd<>uid://cge5wgcolb5x8::::res://exports/icon.svg<>uid://co1u25eg6lmpn::::res://scenes/interactable.tscn
+tutorial.tscn::PackedScene/PackedScene::4707138252211196530::1785083937::0::1::::<><><>0<>0<><>::uid://bgx8817pnmh8f::::res://scenes/player.tscn<>uid://nqf5aj5dthwr::::res://sprites/TileMapLateForWork(3).png<>uid://dxs3q3744orno::::res://scenes/menu.tscn<>uid://cqo2mbwtqf6wr::::res://scenes/shield.tscn<>uid://cnbjfmk53kl5t::::res://sprites/ansimuz forest.png
+wood.tscn::PackedScene/PackedScene::8148737596204417584::1785083940::0::1::::<><><>0<>0<><>::uid://cjp3kvfpl8auw::::res://scripts/wood.gd<>uid://bw8wcp2pdy5mb::::res://sprites/wooden plank.png<>uid://co1u25eg6lmpn::::res://scenes/interactable.tscn
+::res://scripts/::1785083936
+animation_player.gd::GDScript/GDScript::8670681701341326205::1785076971::0::1::::<>AnimationPlayer<><>0<>0<><>::
+audio_stream_player_2d.gd::GDScript/GDScript::1756917475195005276::1785080412::0::1::::<>AudioStreamPlayer2D<><>0<>0<><>::
+freeze.gd::GDScript/GDScript::1476353364575870130::1784997770::0::1::::<>StaticBody2D<><>0<>0<><>::
+game_over_screen.gd::GDScript/GDScript::8926537963574306912::1785079600::0::1::::<>CanvasLayer<><>0<>0<><>::
+global.gd::GDScript/GDScript::5862998825072041984::1785080293::0::1::::<>Node<><>0<>0<><>::
+hud.gd::GDScript/GDScript::354114206293197544::1785082327::0::1::::<>Control<><>0<>0<><>::
+interactable.gd::GDScript/GDScript::3927575254301356658::1784989483::0::1::::<>Area2D<><>0<>0<><>::
+interacting_component.gd::GDScript/GDScript::2552349306061412259::1784909941::0::1::::<>Node2D<><>0<>0<><>::
+menu.gd::GDScript/GDScript::132893413714147152::1785083936::0::1::::<>CanvasLayer<><>0<>0<><>::
+player.gd::GDScript/GDScript::2050343812667728774::1785081154::0::1::::<>CharacterBody2D<><>0<>0<><>::
+shield.gd::GDScript/GDScript::3777056798384564821::1784992855::0::1::::<>StaticBody2D<><>0<>0<><>::
+swuuper_test.gd::GDScript/GDScript::8555820611468005930::1784909743::0::1::::<>StaticBody2D<><>0<>0<><>::
+wood.gd::GDScript/GDScript::5437225671587804054::1784997772::0::1::::<>StaticBody2D<><>0<>0<><>::
+::res://sounds/::1785079996
+mfcc-retro-arcade-game-music-297305(1).mp3::AudioStreamMP3/AudioStreamMP3::7147442817850392749::1785079996::1785079996::1::::<><><>0<>0<>73bff0b10eec435f887c28ad9d76e115<>res://.godot/imported/mfcc-retro-arcade-game-music-297305(1).mp3-30553cad4c1063203aebad2f8680aa3a.mp3str::
+::res://sprites/::1785077417
+ansimuz forest.png::CompressedTexture2D/CompressedTexture2D::5687916741468238347::1784996022::1784996022::1::::<><><>0<>0<>f50a249464451058baf3d2823444c787<>res://.godot/imported/ansimuz forest.png-10953764cb25216effa7cb58ac95580a.ctex::
+city by cityvector91.jpg::CompressedTexture2D/CompressedTexture2D::7343431789972898462::1784914534::1784914537::1::::<><><>0<>0<>9e48b2b421ce424fdc9aebdbca099a30<>res://.godot/imported/city by cityvector91.jpg-f9c5c9353cb5e529ff1c1376385c5d78.ctex::
+Fiulo City.svg::CompressedTexture2D/CompressedTexture2D::9056470023361678489::1784990290::1784990305::1::::<><><>0<>0<>7e0477825403ff751851b5e74d4cdd04<>res://.godot/imported/Fiulo City.svg-2b353c4a453fc0ad1b692a122d24a29b.ctex::
+freezeTimer-1.png.png::CompressedTexture2D/CompressedTexture2D::4400114414496740211::1784996748::1784996748::1::::<><><>0<>0<>2d16e546597bc92af5ad252d059ae49c<>res://.godot/imported/freezeTimer-1.png.png-9538ed7088ecd138f1358cfcae593d86.ctex::
+Giovalian city.png::CompressedTexture2D/CompressedTexture2D::975632525689837091::1784991326::1784991327::1::::<><><>0<>0<>57c1bc8582a3a336c6a32320c50fa43d<>res://.godot/imported/Giovalian city.png-c1b9557b1a0af34118598f7196c8b6db.ctex::
+New Piskel-1.png(3).png::CompressedTexture2D/CompressedTexture2D::7989353401211753384::1785007708::1785007708::1::::<><><>0<>0<>5770f45694cecb8a4cf96b0a0d4ef70f<>res://.godot/imported/New Piskel-1.png(3).png-6292b90c6e8913d79df2a6c1b2aec65e.ctex::
+New Piskel.png::CompressedTexture2D/CompressedTexture2D::4944660790522392894::1783007001::1784741141::1::::<><><>0<>0<>2e2a8441a2ad3e1939248ca1ba74be0e<>res://.godot/imported/New Piskel.png-1d1450533306d83717fbc2d6a043035f.ctex::
+SilicaAndPina shop.png::CompressedTexture2D/CompressedTexture2D::6365696927432084042::1785076864::1785076880::1::::<><><>0<>0<>530f9f4b7609004dd24eda636aa8124a<>res://.godot/imported/SilicaAndPina shop.png-130816b8034da583a257d731eafa4948.ctex::
+TileMapLateForWork(3).png::CompressedTexture2D/CompressedTexture2D::945842185411423713::1755010607::1784741686::1::::<><><>0<>0<>cf9c398ec907bac50efbccd0198018ad<>res://.godot/imported/TileMapLateForWork(3).png-d3e266bdd7b140680e58d87ae4ab0664.ctex::
+TokyoGeisha city.png::CompressedTexture2D/CompressedTexture2D::4523180401664720771::1784991690::1784991691::1::::<><><>0<>0<>1ebcffcf14942e3f027bb1b0182be7de<>res://.godot/imported/TokyoGeisha city.png-563b8c118ff1902ff941c37b1e749fdc.ctex::
+wooden plank.png::CompressedTexture2D/CompressedTexture2D::4000039885288948257::1784910936::1784910936::1::::<><><>0<>0<>ae4ab957f39f973cf2f2945b27f59f35<>res://.godot/imported/wooden plank.png-30fb0e2d77b1202133584a9e89086d05.ctex::
+workaholic(1).png::CompressedTexture2D/CompressedTexture2D::7694520092590092317::1785077390::1785077391::1::::<><><>0<>0<>a959de7ac99d5e391a9cd909a1a5ea30<>res://.godot/imported/workaholic(1).png-61bebee835c0badf50c77e7ba9184a67.ctex::
+workaholic.png::CompressedTexture2D/CompressedTexture2D::808630462056746453::1785077416::1785077417::1::::<><><>0<>0<>d5ba9a7be0d6f1a4b91fa93ffd692ee8<>res://.godot/imported/workaholic.png-971b60af95aa4b0b49209d52efdaea94.ctex::
